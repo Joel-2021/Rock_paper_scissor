@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  color: hsl(229, 25%, 31%);
+}
+body {
+  background-image: radial-gradient(
+    circle,
+    hsl(214, 47%, 23%),
+    hsl(237, 49%, 15%)
+  );
+overflow: hidden;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+  flex-direction: column;
+}
+.box {
+  height: auto;
+  width: 60%;
+  border-radius: 5px;
+  padding: 5px;
+  display: flex;
+  border: 1px solid  hsl(217, 16%, 45%);
+  justify-content: space-between;
+}
+.title {
+  padding: 10px;
+  color: aliceblue;
+  font-weight: 700;
+  font-size: larger;
+  line-height: 20px;
+}
+
+.scorecard{
+  color: hsl(229, 64%, 46%);
+  font-size: larger;
+  margin: 5px;
+  height: auto;
+  width: 15%;
+  border: solid white;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.score{
+  color: hsl(214, 47%, 23%);
+  font-size: 2.5rem;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.game {
+  padding-top: 7%;
+  display: grid;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.circle {
+  height: 180px;
+  width: 180px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+.paper {
+  margin-top: -45%;
+  margin-left: 15%;
+  border-radius: 100%;
+  height: 220px;
+  width: 220px;
+  background-image: linear-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  grid-area: 3 / 2 / 4 / 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.scissor {
+  margin-top: -30%;
+  margin-left: -40%;
+  height: 220px;
+  width: 220px;
+  background-image: linear-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  grid-area: 1 / 3 / 2 / 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+.rock {
+  margin-top: -30%;
+  margin-left: 40%;
+  height: 220px;
+  width: 220px;
+  background-image: linear-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  grid-area: 1 / 1 / 2 / 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+.bg-img{
+  z-index: -1;
+  padding-top: 10px;
+}
+.rules{
+  position: absolute;
+  margin-left: 50%;
+  margin-top: 40%;
+  padding: 1%;
+  color: aliceblue;
+  border: 1px solid  hsl(217, 16%, 45%);
+  font-size: 1.5rem;
+  border-radius: 5px;
+}
+.rules:hover{
+  cursor: pointer;
+}
+.circle>img {
+  height: 80px;
+  width: auto;
+}
+
+.rules_window{
+  display: none;
+  color: hsl(217, 16%, 45%);
+  position: fixed;
+  background-image: radial-gradient(
+    circle,
+    hsl(214, 47%, 23%),
+    hsl(237, 49%, 15%)
+  );
+  background-color: aliceblue;
+  text-align: center;
+  padding:0 2% 2%;
+  border-radius: 10px;
+  margin-top: 10%;
+}
+.rules_window>button{
+  background-color: hsl(214, 49%, 15%);
+  border-style: none;
+  position: absolute;
+  margin-left: 83%;
+  margin-top: -5%;
+}
+.rules_window>button:hover{
+  cursor: pointer;
+}
